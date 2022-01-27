@@ -12,7 +12,6 @@ This service is used to update the block codes and the reason codes for the bloc
 
 ```json
 {
-  "cardSequence": "0001",
   "blockCode": "X" 
 }
 ```
@@ -28,7 +27,7 @@ The below table identifies the required parameters in the request payload.
 | `businessUnit` | *number* | 3 | Identification number of the organization associated with the Card. |
 | `CardNumber` | *string* | 19 | Card Number of the cardholder. | 
 | `cardSequence` | *number* | 04 | A sequence number of the card in case of card scheme 2 else pass the default value of 0001. | 
-| `blockCode1` | *string* | 1 | Block Code to assign to the Card. |
+| `blockCode` | *string* | 1 | Block Code to assign to the Card. |
 
 ### Successful Response Payload
 
