@@ -30,7 +30,7 @@ The below table identifies the required parameters in the request payload.
 | -------- | :--: | :------------: | ------------------ |
 | `businessUnit` | *number* | 3 | Identification number of the organization associated with the account. |
 | `accountNumber` | *string* | 19 | Account Number of the cardholder. | 
-| `blockCode1` | *string* | 1 | Block Code to assign to the account. |
+| `blockCode1/blockCode2` | *string* | 1 | Block Code to assign to the account. |
 
 ### Successful Response Payload
 
