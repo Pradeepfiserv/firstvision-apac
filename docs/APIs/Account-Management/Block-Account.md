@@ -30,20 +30,20 @@ The below table identifies the required parameters in the request payload.
 | -------- | :--: | :------------: | ------------------ |
 | `businessUnit` | *number* | 3 | Identification number of the organization associated with the account. |
 | `accountNumber` | *string* | 19 | Account Number of the cardholder. | 
-| `blockCode1` | *string* | 1 | Block Code to assign to the account. |
+| `blockCode1/blockCode2` | *string* | 1 | Block Code to assign to the account. |
 
 ### Successful Response Payload
 
 ```json
 {
-    "businessUnit": "100",
-    "accountNumber": "0001000010000510481",
-    "product": "1",
-    "billingAcctInd": "0",
-    "blockCode1": "X",
-    "blockCodeDate1": "08/18/2021",
-    "blockCode2": " ",
-    "blockCodeDate2": "00/00/0000"
+  "accountNumber": "0001000010000510481",
+  "billingAcctInd": "0",
+  "blockCode1": "X",
+  "blockCode2": " ",
+  "blockCodeDate1": "19/08/2021",
+  "blockCodeDate2": "19/08/2021",
+  "businessUnit": "100",
+  "product": "1"
 }
 ```
 
@@ -60,6 +60,7 @@ Below table provides the list of application's error code and its description.
 
 | ErrorCode |  Description/Values |
 | --------  | ------------------ |
+| `V5BS0010SF` |Update Request - Record not found|
 | `V5BS0011SF` |Update Request - Record Add Pending|
 | `V5BS4001EA` |Invalid Business Unit|
 | `V5BS4001SC` |Business Unit is in Purged Status|
