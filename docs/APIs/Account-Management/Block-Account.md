@@ -8,7 +8,7 @@ also used to remove block code from the account when space provided on existing 
 
 ## Endpoint
 
-`PUT /v1/accounts/{accountNumber}/blockUnblock?businessUnit=nnn`
+`PUT /v1/accounts/{accountNumber}/blockUnblock`
 
 ## Payload Example
 
